@@ -1,0 +1,155 @@
+.oks-logo {
+  padding-top: 31px;
+  padding-bottom: 28px;
+  margin: 0 auto;
+  display: block;
+}
+
+.facebook {
+  background: url('../images/facebook-background.png') no-repeat center center;
+  background-size: cover;
+}
+
+.facebook-container {
+  height: 470px;
+  position: relative;
+}
+
+.facebook-logo {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.top-information {
+  margin-top: 107px;
+  margin-bottom: 184px;
+  text-align: center;
+}
+
+p {
+  color: #353736;
+}
+
+.top-banner {
+  background: url('../images/top-banner.png') no-repeat center center;
+  background-size: cover;
+  height: 493px;
+  text-align: center;
+}
+
+.top-banner span.ynf-subtitle {
+  margin-top: 260px;
+  display: block;
+  color: #868175;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.top-banner span.top-banner-date-and-time {
+  display: block;
+  margin-top: 120px;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+p, a, span {
+  font-family: Arial;
+}
+
+.top-information p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.young-and-free-banner-container {
+  height: 526px;
+  width: 100%
+  display: table;
+  width: 100%;
+}
+
+.young-and-free-banner {
+  background: url('../images/young-and-free-banner.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.time-information {
+  margin-top: 131px;
+  margin-bottom: 103px;
+  width: 100%;
+  text-align: center;
+}
+
+.time-information p {
+  color: #3e6182;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.freedom {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.freedom-container {
+  height: 459px;
+  display: table;
+  width: 100%; 
+}
+
+.freedom-background-color {
+  background-color: #fff5af;
+}
+
+.freedom p,
+.freedom span {
+  font-size: 20px;
+  color: #98917c;  
+}
+
+.freedom .freedom-title {
+  font-size: 76px;
+  font-weight: bold;
+}
+
+.time-information img {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.bottom-information {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  text-align: center;
+}
+
+.bottom-information p {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.facebook-container span {
+  position: absolute;
+  top: 350px;
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  color: #3e6182;
+}
+
+.facebook-container a:hover {
+  color: #3e6182;
+}
+
+#map {
+  width: 100%;
+  height: 450px;
+}
+
+.map-row {
+  margin-bottom: 100px;
+}

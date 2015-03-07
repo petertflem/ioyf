@@ -10,16 +10,7 @@ wp-ioyf/wp-content/*
 !wp-ioyf/wp-content/plugins/
 !wp-ioyf/wp-content/themes/
 
-# Ignore everything in the "plugins" directory, except the plugins you
-# specify (see the commented-out examples for hints on how to do this.)
-#!wp-ioyf/wp-content/plugins/news
-#!wp-ioyf/wp-content/plugins/reference
-#!wp-ioyf/wp-content/plugins/settings
-#!wp-ioyf/wp-content/plugins/inspiration/
-#!wp-ioyf/wp-content/plugins/inspiration-categories
-#!wp-ioyf/wp-content/plugins/inspiration-picker-links
-
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 wp-ioyf/wp-content/themes/*
-!wp-ioyf/wp-content/themes/kasparabi/
+!wp-ioyf/wp-content/themes/ioyf/
