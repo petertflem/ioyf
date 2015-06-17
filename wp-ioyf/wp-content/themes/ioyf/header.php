@@ -20,3 +20,12 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img src="<?php echo ROOT; ?>/assets/images/oks-logo.png" class="oks-logo img-responsive" alt="oks logo" />
+          </a>
+        </div>
+      </div>
+    </div>
