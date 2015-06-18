@@ -3,7 +3,8 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 no-padding">
-      <img class="img-responsive" src="<?php echo ROOT; ?>/assets/images/top-banner.jpg" alt="Young and Free banner" />
+      <div class="banner top-banner"></div>
+      <!--<img class="img-responsive" src="<?php echo ROOT; ?>" alt="Young and Free banner" />-->
     </div>
   </div>
   
@@ -11,7 +12,9 @@
     <div class="row post">
       <div class="col-xs-12 no-padding">
         <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+          <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+          <div class="banner" style="background-image: url('<?php echo $thumb[0]; ?>');"></div>
+          <!--<?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>-->
         </a>
       </div>
     </div>

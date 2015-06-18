@@ -20,13 +20,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 no-padding">
-          <header>
-            <span class="menu-toggle"></span>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-          </header>
-        </div>
-      </div>
-    </div>
+    <header>
+      <div id="menu-toggle" class="menu-toggle"></div>
+      <div id="menu" class="menu"></div>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+    </header>
+    <div class="main-wrapper">
