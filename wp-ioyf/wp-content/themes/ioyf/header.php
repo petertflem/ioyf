@@ -22,10 +22,11 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <img src="<?php echo ROOT; ?>/assets/images/oks-logo.png" class="oks-logo img-responsive" alt="oks logo" />
-          </a>
+        <div class="col-xs-12 no-padding">
+          <header>
+            <span class="menu-toggle"></span>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+          </header>
         </div>
       </div>
     </div>

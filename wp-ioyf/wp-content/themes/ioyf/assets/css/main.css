@@ -1,38 +1,19 @@
-.oks-logo {
-  padding-top: 31px;
-  padding-bottom: 28px;
-  margin: 0 auto;
-  display: block;
-}
-
-.top-banner {
-  background: url('../images/top-banner.png') no-repeat center center;
-  background-size: cover;
-  height: 493px;
-  text-align: center;
-}
-
-.top-banner span.ynf-subtitle {
-  margin-top: 260px;
-  display: block;
-  color: #868175;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.top-banner span.top-banner-date-and-time {
-  display: block;
-  margin-top: 120px;
-  font-size: 25px;
-  color: white;
-  font-weight: bold;
-}
-
-.col-xs-12 {
+.no-padding {
   padding: 0;
 }
 
-.single-header-image {
-  width: 100%;
-  background-size: cover;
+.post {
+  margin-bottom: 3px;
+}
+
+header {
+  height: 82px;
+  background-color: #d7d7d7;
+}
+
+.menu-toggle {
+  width: 81px;
+  height: 82px;
+  background-color: #aaaaaa;
+  display: inline-block;
 }
