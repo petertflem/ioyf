@@ -22,7 +22,13 @@
   <body>
     <header>
       <div id="menu-toggle" class="menu-toggle"></div>
-      <div id="menu" class="menu"></div>
+      <div id="menu" class="menu">
+        <?php wp_nav_menu(array(
+            'theme_location' => 'header-nav-menu',
+            'menu_class' => 'header-navigation'
+          )); 
+        ?>
+      </div>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
     </header>
     <div class="main-wrapper">
