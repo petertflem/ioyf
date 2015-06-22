@@ -1,11 +1,10 @@
 (function ($) {
   
   $('#menu-toggle').on('click', function () {
-    var menu = $('.menu');
-    var left = menu.css('left').replace(/px/g, '');
-    var animateTo = parseInt(left) < 0 ? '0%' : '-100%';
+    var menu = $('#menu');
+    var openClass = 'menu-open';
     
-    menu.css('left', animateTo);
+    menu.hasClass(openClass) ? menu.removeClass(openClass) : menu.addClass(openClass);
   });
   
 })(jQuery);
