@@ -16,19 +16,25 @@
     
     <link href="<?php echo ROOT; ?>/assets/css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo ROOT; ?>/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo ROOT; ?>/assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo ROOT; ?>/assets/css/slideout.css" rel="stylesheet" type="text/css" />
     
     <?php wp_head(); ?>
   </head>
   <body>
-    <header>
-      <div id="menu-toggle" class="menu-toggle"></div>
+    <header id="menu">
+      <!--<div id="menu-toggle" class="menu-toggle"></div>-->
       <div id="menu" class="menu">
         <?php wp_nav_menu(array(
             'theme_location' => 'header-nav-menu',
             'menu_class' => 'header-navigation'
           )); 
         ?>
+        <img src="<?php echo ROOT; ?>/assets/images/facebook-icon.png" alt="facebook-ikon" class="icon" />
+        <img src="<?php echo ROOT; ?>/assets/images/instagram-icon.png" alt="instagram-ikon" class="icon" />
+        <img src="<?php echo ROOT; ?>/assets/images/oks-logo.png" alt="oks-logo" />
       </div>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
     </header>
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="content">
+      <button class="toggle-button">☰</button>

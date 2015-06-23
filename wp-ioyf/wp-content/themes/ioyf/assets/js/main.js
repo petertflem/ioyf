@@ -1,10 +1,19 @@
 (function ($) {
   
-  $('#menu-toggle').on('click', function () {
-    var menu = $('#menu');
-    var openClass = 'menu-open';
-    
-    menu.hasClass(openClass) ? menu.removeClass(openClass) : menu.addClass(openClass);
+  bindDOMElements();
+  
+  function bindDOMElements() {
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      slideout.toggle();
+    });
+  }
+  
+  var slideout = new Slideout({
+    'panel': document.getElementById('content'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
   });
   
 })(jQuery);

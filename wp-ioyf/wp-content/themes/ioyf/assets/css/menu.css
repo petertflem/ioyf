@@ -1,0 +1,15 @@
+.header-navigation {
+  list-style-type: none;
+}
+
+.menu {
+  background-color: #d7d7d7;
+}
+
+.menu img {
+  display: block;
+}
+
+.menu img.icon {
+  width: 30px;
+}
