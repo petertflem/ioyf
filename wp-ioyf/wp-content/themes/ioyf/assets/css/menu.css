@@ -4,12 +4,19 @@
 
 .menu {
   background-color: #d7d7d7;
+  height: 100%;
 }
 
 .menu img {
   display: block;
 }
 
-.menu img.icon {
-  width: 30px;
+.menu-toggle {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: #888;
+  content: "☰";
+  cursor: pointer;
 }

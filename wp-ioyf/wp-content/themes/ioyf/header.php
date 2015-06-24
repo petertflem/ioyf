@@ -22,9 +22,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header id="menu">
+    <nav id="menu">
       <!--<div id="menu-toggle" class="menu-toggle"></div>-->
-      <div id="menu" class="menu">
+      <div class="menu">
         <?php wp_nav_menu(array(
             'theme_location' => 'header-nav-menu',
             'menu_class' => 'header-navigation'
@@ -35,6 +35,6 @@
         <img src="<?php echo ROOT; ?>/assets/images/oks-logo.png" alt="oks-logo" />
       </div>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-    </header>
-    <div class="main-wrapper" id="content">
-      <button class="toggle-button">☰</button>
+    </nav>
+    <div class="main-wrapper" id="content" style="background-color: white;">
+      <div class="menu-toggle"></div>

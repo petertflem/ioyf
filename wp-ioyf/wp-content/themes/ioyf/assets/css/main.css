@@ -17,6 +17,10 @@
   height: 320px;
 }
 
+.main-wrapper {
+  height: 100%;
+}
+
 /*
 @media(min-width:768px) {
   .banner {
