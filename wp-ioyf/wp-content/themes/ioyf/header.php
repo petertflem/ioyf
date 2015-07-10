@@ -28,6 +28,9 @@
             'menu_class' => 'header-navigation'
           )); 
         ?>
+        <img src="<?php echo ROOT; ?>/assets/images" />
+        <img src="<?php echo ROOT; ?>" />
+        <img src="<?php echo ROOT; ?>" />
       </div>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
     </header>
