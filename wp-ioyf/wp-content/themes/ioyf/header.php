@@ -17,26 +17,23 @@
     <link href="<?php echo ROOT; ?>/assets/css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo ROOT; ?>/assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo ROOT; ?>/assets/css/menu.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo ROOT; ?>/assets/css/slideout.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo ROOT; ?>/assets/css/vendor/slicknav.min.css" rel="stylesheet" type="text/css" />
 
     <?php wp_head(); ?>
   </head>
   <body>
-    <nav id="menu">
-      <!--<div id="menu-toggle" class="menu-toggle"></div>-->
-      <div class="menu">
-        <?php wp_nav_menu(array(
-            'theme_location' => 'header-nav-menu',
-            'menu_class' => 'header-navigation'
-          ));
-        ?>
+    <nav>
+      <?php
+        require 'business/wrap-main-navigation-menu.php';
 
-        <img src="<?php echo ROOT; ?>/assets/images/facebook-icon.png" alt="facebook-ikon" class="icon" />
-        <img src="<?php echo ROOT; ?>/assets/images/instagram-icon.png" alt="instagram-ikon" class="icon" />
-        <img src="<?php echo ROOT; ?>/assets/images/oks-logo.png" alt="oks-logo" />
-
-      </div>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+        wp_nav_menu(array(
+          'theme_location' => 'header-nav-menu',
+          'menu_class' => 'header-navigation',
+          'menu_id' => 'menu',
+          'items_wrap' => main_navigation_wrap()
+        ));
+      ?>
+      <!--a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a-->
     </nav>
     <div class="main-wrapper" id="content" style="background-color: white;">
-      <div class="menu-toggle"></div>
+      <!--div class="menu-toggle"></div-->

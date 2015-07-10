@@ -1,22 +1,3 @@
-.header-navigation {
-  list-style-type: none;
-}
-
-.menu {
-  background-color: #d7d7d7;
-  height: 100%;
-}
-
-.menu img {
-  display: block;
-}
-
-.menu-toggle {
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  background-color: #888;
-  content: "☰";
-  cursor: pointer;
+nav {
+  display: none;
 }
