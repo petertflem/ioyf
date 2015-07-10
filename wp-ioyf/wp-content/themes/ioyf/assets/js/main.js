@@ -1,11 +1,18 @@
 (function ($) {
   
-  $('#menu-toggle').on('click', function () {
-    var menu = $('.menu');
-    var left = menu.css('left').replace(/px/g, '');
-    var animateTo = parseInt(left) < 0 ? '0%' : '-100%';
-    
-    menu.css('left', animateTo);
+  bindDOMElements();
+  
+  function bindDOMElements() {
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      slideout.toggle();
+    });
+  }
+  
+  var slideout = new Slideout({
+    'panel': document.getElementById('content'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 0
   });
   
 })(jQuery);

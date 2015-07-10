@@ -6,62 +6,6 @@
   margin-bottom: 3px;
 }
 
-header {
-  position: fixed;
-  top 0;
-  z-index: 1;
-  width: 100%;
-}
-
-.header-navigation {
-  list-style-type: none;
-}
-
-.header-navigation li {
-  display: inline;
-  line-height: 50px;
-}
-
-.menu {
-  z-index: 2;
-  height: 50px;
-  width: calc(100% - 50px);
-  margin-left: 50px;
-  background-color: #d7d7d7;
-  position: absolute;
-  left: -100%;
-  
-  transition: all 1s ease-out;
-}
-
-@keyframe slide {
-  from {
-    left: 100%;
-  }
-  to {
-    left: -100%;  
-  }
-}
-
-.menu-toggle {
-  z-index: 3;
-  width: 50px;
-  height: 50px;
-  background-color: #aaa;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.menu-toggle:hover {
-  
-}
-
-.main-wrapper {
-  padding-top: 20px;
-}
-
 .top-banner {
   background: url('../images/top-banner.jpg') no-repeat;
 }
@@ -71,6 +15,10 @@ header {
   background-position: center center;
   background-size: cover;
   height: 320px;
+}
+
+.main-wrapper {
+  height: 100%;
 }
 
 /*
